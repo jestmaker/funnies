@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legal Notice of Fuck Around and Find Out</title>
+<style>
+  :root {
+    --ink: #1a1712;
+    --paper: #fbfaf5;
+    --rule: #cfc7b4;
+    --stamp: #a3231e;
+    --seal: #7a1c18;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #6a6458;
+    color: var(--ink);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  }
+  .page {
+    max-width: 740px;
+    margin: 40px auto;
+    background: var(--paper);
+    padding: 68px 72px 88px;
+    position: relative;
+    box-shadow: 0 18px 50px rgba(0,0,0,.4);
+    border: 1px solid var(--rule);
+  }
+  /* watermark */
+  .page::before {
+    content: "FAFO";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-24deg);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 800;
+    font-size: 210px;
+    letter-spacing: -8px;
+    color: rgba(163, 35, 30, .05);
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 0;
+  }
+  .content { position: relative; z-index: 1; }
+
+  .letterhead {
+    text-align: center;
+    border-bottom: 3px double var(--ink);
+    padding-bottom: 18px;
+    margin-bottom: 8px;
+  }
+  .firm {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #5a5344;
+  }
+  .firm-sub {
+    font-style: italic;
+    font-size: 13px;
+    color: #7a7361;
+    margin-top: 4px;
+  }
+  .docket {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+    color: #7a7361;
+    margin: 14px 0 30px;
+    letter-spacing: .5px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 26px;
+    line-height: 1.25;
+    margin: 0 0 6px;
+    letter-spacing: .5px;
+  }
+  h1 small {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--stamp);
+    margin-top: 8px;
+  }
+  .divider {
+    width: 90px;
+    height: 2px;
+    background: var(--ink);
+    margin: 22px auto 30px;
+  }
+
+  p { line-height: 1.75; margin: 0 0 18px; text-align: justify; }
+  .lead { text-indent: 0; }
+  .whereas { padding-left: 26px; text-indent: -26px; }
+  .smallcaps { font-variant: small-caps; font-weight: 700; letter-spacing: .5px; }
+  .term { font-weight: 700; }
+  em.cite { }
+
+  .closing {
+    text-align: center;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin: 34px 0 30px;
+    text-transform: uppercase;
+  }
+
+  .sign {
+    margin-top: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .sign-block { width: 260px; }
+  .sign-line {
+    border-top: 1px solid var(--ink);
+    padding-top: 6px;
+    font-style: italic;
+    font-size: 14px;
+  }
+
+  /* wax-style seal */
+  .seal {
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 38% 34%, #a3231e, var(--seal) 70%);
+    color: #f3d9d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: rotate(-9deg);
+    box-shadow: inset 0 0 14px rgba(0,0,0,.45), 0 3px 8px rgba(0,0,0,.35);
+    border: 3px solid rgba(255,255,255,.15);
+    flex-shrink: 0;
+  }
+  .seal span {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 1.35;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .seal span b { font-size: 26px; display: block; letter-spacing: 2px; }
+
+  @media print {
+    body { background: #fff; }
+    .page { box-shadow: none; margin: 0; border: none; max-width: 100%; }
+  }
+  @media (max-width: 620px) {
+    .page { padding: 40px 26px 60px; margin: 0; }
+    .page::before { font-size: 120px; }
+    .sign { flex-direction: column-reverse; gap: 34px; align-items: center; }
+    .sign-block { width: 100%; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="content">
+    <div class="letterhead">
+      <div class="firm">Should&rsquo;ve Listened &amp; Associates, LLP</div>
+      <div class="firm-sub">Attorneys-at-Consequences &middot; Est. The Moment You Started</div>
+    </div>
+    <div class="docket">
+      <span>DOCKET NO. FAFO-2026-001</span>
+      <span>RE: YOU, SPECIFICALLY</span>
+    </div>
+
+    <h1>Legal Notice of Fuck Around<br>and Find Out
+      <small>Pursuant to the Doctrine of FAFO</small>
+    </h1>
+    <div class="divider"></div>
+
+    <p class="lead"><span class="smallcaps">Comes now</span> the Aggrieved Party (hereinafter &ldquo;The Person You Have Wronged&rdquo;) to serve formal notice upon the Recipient (hereinafter &ldquo;You Absolute Menace&rdquo;) pursuant to the well-established doctrine of <span class="term">FUCK AROUND AND FIND OUT</span> (hereinafter &ldquo;FAFO&rdquo;).</p>
+
+    <p class="whereas"><span class="smallcaps">Whereas</span> you did knowingly and willfully commence to FUCK AROUND;</p>
+    <p class="whereas"><span class="smallcaps">Whereas</span> you were advised, both expressly and impliedly, that to FUCK AROUND would inevitably result in you having to FIND OUT;</p>
+    <p class="whereas"><span class="smallcaps">Whereas</span> a reasonable person of ordinary prudence would have elected NOT to FAFO;</p>
+
+    <p><span class="smallcaps">Now therefore</span>, be it known that the &ldquo;Fuck Around&rdquo; prong of FAFO has concluded, and the &ldquo;Find Out&rdquo; prong of FAFO shall commence effective IMMEDIATELY, with no further warnings, grace periods, or take-backsies.</p>
+
+    <p><span class="smallcaps">You are hereby notified</span> that under FAFO, liability attaches automatically upon the act of FUCKING AROUND, and the corresponding duty to FIND OUT is hereby deemed non-negotiable, fully vested, and richly deserved.</p>
+
+    <p>Any attempt to argue you were &ldquo;just FAFO-ing&rdquo; and did not expect to FIND OUT shall be dismissed with prejudice, and frankly, embarrassment.</p>
+
+    <p>Governed exclusively by the binding precedent of <em class="cite">Should&rsquo;ve Listened v. You</em>, this notice requires no signature, as your fate was sealed the moment you elected to FAFO.</p>
+
+    <div class="closing">So Served. FAFO.</div>
+
+    <div class="sign">
+      <div class="sign-block">
+        <div class="sign-line">The Person You Have Wronged</div>
+      </div>
+      <div class="seal" aria-label="Official seal">
+        <span>Sealed by<b>FAFO</b>No Appeals</span>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

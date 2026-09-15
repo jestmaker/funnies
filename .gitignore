@@ -1,0 +1,24 @@
+# JetBrains (IntelliJ IDEA, WebStorm, etc.)
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# Visual Studio
+.vs/
+*.user
+
+# Editor backup files (Vim, Emacs, etc.)
+*~
+*.swp
+*.swo
+.netrwhist
+.\#*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
